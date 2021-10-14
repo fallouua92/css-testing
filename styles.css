@@ -1,70 +1,16 @@
-#index{
-  background-color:grey;
-}
 
-h1 {
-  color: red;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-
-
-#secondpage{
-  background-color:  #66ffd9;
-}
-
-h1 {
-  color:red;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-
-#thirdpage {
-  background-color:green;
-}
-
-h1 {
-  color:red;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-
-#fourthpage{
-  background-color:  #ffb366;
-}
-
-h1 {
-  color:red;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
-
-.contactus{
-  background-color:bisque;
-}
-
-h1 {
-  color:black;
-  text-align: center;
-}
-
-p {
-  font-family: verdana;
-  font-size: 20px;
-}
+body {
+    background-color: lightblue;
+    text-align: center;
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+  
+  p {
+    font-family: verdana;
+    font-size: 20px;
+  }
+  

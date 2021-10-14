@@ -1,29 +1,65 @@
 <!DOCTYPE html>
+<html lang="en">
 <head>
-    <script>
-        function validateForm() {
-            let x = document.forms["myForm"]["fname"].value;
-            if (x == "") {
-                alert("Name must be filled out");
-                return false;
-            }
-        }
-    </script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactus Page</title>
+    <!--This is my CSS link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--This is my JavaScript link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body class="contactus">
-    <ul>
-        <li> <a href="index.html">Visite the home page here!</a> </li>
-        <li> <a href="secondpage.html"> Visit the second page here!</a> </li>
-        <li> <a href="thirdpage.html"> Visit the third page here!</a> </li>
-        <li> <a href="fourthpage.html"> Visit the fourth page here!</a> </li>
-	</ul>
+<body>
 
-    <form name="myForm" onsubmit="return validateForm()">
-        <div>Name: <input type="text" name="fname"></div>
-        <div>Email: <input type="text" name="femail"></div>
-		<div>Phone: <input type="text" name="fphone"></div>
-		<div>Address: <input type="text" name="ffull address"></div>
-		<div>Post code: <input type="text" name="fpost code"></div>
-        <input type="submit" value="Submit">
-    </form>
-</body>
+     <!-- This the div with class row and column for the header -->
+      <div class="row">
+        <div class="col d-flex justify-content-center bg-dark text-white">
+            <h1>Contact us Page</h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg">
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html">Home Page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="Dogs.html">Dogs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Cats.html">Cats</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Pets.html">Pets Products</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact us</a>
+                  </li>
+              </ul>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3"></div>
+          <div class="col-6">
+            <img src="Images/contact-one.jpg" class="d-block w-100 p-2">
+          </div>
+          <div class="col-3"></div>
+        </div>
+        <div class="col-lg text-center">
+          <h2 class="text-center">My Pet Website Form</h2>
+  <!--This my form Validation-->
+          <form name="petForm" class="text-center" onsubmit="return formValidation()">
+              <div class="p-2">Name: <input type="text" name="petName"></div>
+              <div class="p-2">Last Name: <input type="text" name="petLast Name"></div>
+              <div class="p-2">Home Address: <input type="text" name="faddress"></div>
+              <div class="p-2">Phone Number: <input type="text" name="faddress"></div>
+              <div class="p-2">Email Address: <input type="text" name="faddress"></div>
+              <div class="p-2"><input type="submit" value="Submit" class="justify-content-center"></div>
+          </form>
+        </div>
+    
+      </body>
+  </html>

@@ -1,99 +1,124 @@
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-	<title>Home page</title>
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		<link rel="stylesheet" href="styles.css">
-		<meta charset="utf-8">
-	</head>
-	<body id="index">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Pet Website</title>
+    <!--This is my bootstrap with CSS link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--This is my JavaScript link-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
-		<div class="container">
-			<div class="row">
-			<div class="col">
-				<h1>Welcome to my pet shop website</h1>
-			</div>
-			</div>
+  </head>
+<body>
+    <!--I have used the div here with class row and column for the header of the page-->
+    <div class="row">
+        <div class="col d-flex justify-content-center">
+            <h1>Pet Website</h1>
+    </div>
+    <div>
+        <!--One more row and column for the navbar-->
+    <div class="row">
+        <div class="col-lg">
+            <ul class="nav nav-tabs justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active" href="index.html">Home Page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Dogs.html">Dogs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Cats.html">Cats</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="PetsProducts.html">Pets Products</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Contact.html">Contact US</a>
+                </li>
+                
+              </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg">
+            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="Images/pet1.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/pet2.jpg" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="Images/pet3.png" class="d-block w-100" alt="...">
+                 
+                </div>
+                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+                </div>
+          </div>      
+<!--I have created a cat list here-->
+          <div class="row">
+            <div class="col-lg d-flex justify-content-center bg-dark text-white">
+                <h1>Please find out Cats here!</h1>
+            </div>
+        </div>
+        <div class="row bg-light">
+          <div class="col-lg-2 p-3"></div>
+            <div class="col-lg-2 p-3 text-center">
+              <img src="Images/cat1.jpg" class="img-fluid mx-auto d-block p-2" alt="..." > <a href="/Images/pets-dog3.jpg" class="btn btn-success col-md-5 p-2" style="text-decoration: none;"><p align="center" text-decoration="none">Charlie</p></a> 
+            </div>
+            <div class="col-lg-2 p-3 text-center">
+              <img src="Images/cat2.jpg" class="img-fluid mx-auto d-block p-2" alt="..." > <a href="/Images/pets-dog4.jpg" class="btn btn-success col-md-5 p-2" style="text-decoration: none;"><p align="center" text-decoration="none">Lucy</p></a>
+            </div>
+            <div class="col-lg-2 p-3 text-center">
+              <img src="Images/cat-1.jpg" class="img-fluid mx-auto d-bloc p-2" alt="..."> <a href="/Images/pets-dog5.jpg" class="btn btn-success col-md-5 p-2" style="text-decoration: none;"><p align="center" text-decoration="none">Charlie</p></a>
+            </div>
+            <div class="col-lg-2 p-3 text-center">
+              <img src="Images/cat-2 (1).jpg" class="img-fluid mx-auto d-bloc p-2" alt="..."> <a href="/Images/pets-dog6.jpg" class="btn btn-success col-md-5 p-2" style="text-decoration: none;"><p align="center" text-decoration="none">Lucy</p></a>
+            </div>
+            <div class="col-lg-2 p-3">
+            </div>
+        </div>
+<!--I have created a dog list here-->
+        <div class="row">
+          <div class="col-lg d-flex justify-content-center bg-dark text-white">
+              <h1>Please find out Dogs here!</h1>
+          </div>
+      </div>
+      <div class="row bg-light">
+        <div class="col-lg-2 p-3"></div>
+          <div class="col-lg-2 p-3 text-center">
+            <img src="Images/dog1.jpg" class="img-fluid mx-auto d-block p-2" alt="..." > <a href="/Images/pets-dog3.jpg" class="btn btn-success col-md-5 p-2" style="text-decoration: none;"><p align="center" text-decoration="none">Charlie</p></a> 
+          </div>
+          <div class="col-lg-2 p-3 text-center">
+            <img src="Images/dog2.jpg" class="img-fluid mx-auto d-block p-2" alt="..." > <a href="/Images/pets-dog4.jpg" class="btn btn-success col-md-5 p-2" style="text-decoration: none;"><p align="center" text-decoration="none">Lucy</p></a>
+          </div>
+          <div class="col-lg-2 p-3 text-center">
+            <img src="Images/dog3.jpeg" class="img-fluid mx-auto d-bloc p-2" alt="..."> <a href="/Images/pets-dog5.jpg" class="btn btn-success col-md-5 p-2" style="text-decoration: none;"><p align="center" text-decoration="none">Charlie</p></a>
+          </div>
+          <div class="col-lg-2 p-3 text-center">
+            <img src="Images/dog4.jpeg" class="img-fluid mx-auto d-bloc p-2" alt="..."> <a href="/Images/pets-dog6.jpg" class="btn btn-success col-md-5 p-2" style="text-decoration: none;"><p align="center" text-decoration="none">Lucy</p></a>
+          </div>
+          <div class="col-lg-2 p-3">
+          </div>
+      </div>
 
-			<div class="row">
-				<div class="col">
-					<nav class="navbar navbar-expand-lg navbar-light bg-light"> 
-						<div class="container-fluid">
-						<a class="navbar-brand" href="#">Navbar</a>
-						<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-							<span class="navbar-toggler-icon"></span>
-						</button>
-						<div class="collapse navbar-collapse" id="navbarSupportedContent">
-							<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="secondpage.html">Visite the Dog page here!</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="thirdpage.html">Visite the Cat page here!</a>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link" aria-current="page" href="fourthpage.html">Visite the Small Pet page here!</a>
-								</li>
-								<a class="nav-link" aria-current="page" href="fivthpage.html">Visite the Fish page here!</a>
-								<a class="nav-link" aria-current="page" href="contact.html">Visite the Contact us page here!</a>
-							</li>			  
-							</ul>
-						</div>
-						</div>
-					</nav>
-				</div>
-				<div class="row">
-					<div class="col">
-						<div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-							<div class="carousel-inner">
-							<div class="carousel-item active">
-								<img src="images/dog.PNG" class="d-block w-100" alt="...">
-							</div>
-							<div class="carousel-item">
-								<img src="images/pet.jpg" class="d-block w-100" alt="...">
-							</div>
-							<div class="carousel-item">
-								<img src="images/dog1.PNG" class="d-block w-100" alt="...">
-							</div>
-							<div class="carousel-item">
-								<img src="images/fish.PNG" class="d-block w-100" alt="...">
-							</div>
-							</div>
-							<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Previous</span>
-							</button>
-							<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-							<span class="carousel-control-next-icon" aria-hidden="true"></span>
-							<span class="visually-hidden">Next</span>
-							</button>
-						</div>
-					</div>
-				</div>
-			</div>
+  </div>
 
-			<div class="row">
-				<div class="col">
-					<p>This is a pet website.</p>
-				</div>
-			</div>
-			<table style="width:100%">
-				<tr>
-				<td>Emil</td>
-				<td>Tobias</td>
-				<td>Linus</td>
-				</tr>
-				<tr>
-				<td>16</td>
-				<td>14</td>
-				<td>10</td>
-				</tr>
-			</table>
-			
-			
-			</div>
-
-
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	</body>
-	</html>
+  <footer class="footer mt-auto py-3 bg-dark">
+    <div class="container-fluid justify-content-center text-center">
+      <span class="text-muted">This is the footer.</span>
+    </div>
+  </footer>
+    
+</body>
+</html>
