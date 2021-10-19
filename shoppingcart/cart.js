@@ -19,7 +19,7 @@ var cart = {
       else { cart.items = JSON.parse(cart.items); }
     },
   
-    // (B3) EMPTY ENTIRE CART
+    // (B3) NO ITEMS INSIDE THE CART
     nuke : function () {
       if (confirm("Empty cart?")) {
         cart.items = {};
@@ -30,7 +30,7 @@ var cart = {
   
     // (C) INITIALIZE
     init : function () {
-      // (C1) GET HTML ELEMENTS
+      // (C1) GETTING HTML ELEMENTS HERE
       cart.hPdt = document.getElementById("cart-products");
       cart.hItems = document.getElementById("cart-items");
   
@@ -180,7 +180,7 @@ var cart = {
   
     // (F) CHANGE QUANTITY
     change : function () {
-      // (F1) REMOVE ITEM
+      // (F1) REMOVE ITEMS
       if (this.value <= 0) {
         delete cart.items[this.dataset.id];
         cart.save();
@@ -213,7 +213,7 @@ var cart = {
       // RECORD TO DATABASE
       // PAYMENT
       // WHATEVER IS REQUIRED
-      alert("TO DO");
+      alert("Thanks for shopping with us. you have been successfuly check out!");
   
       /*
       var data = new FormData();
