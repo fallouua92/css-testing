@@ -3,7 +3,7 @@ var products = {
     123: {
       name : "Lucy",
       desc : "A very helpful dog you will definitely love it.",
-      img : "dog-three.jpg",
+      img : "dog-two.jpg",
       price : 1000
     },
     124: {
