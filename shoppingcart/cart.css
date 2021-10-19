@@ -1,4 +1,4 @@
-/* (A) The full PAGE */
+/* (A) The full Page */
 #cart-wrap {
     font-family: arial, sans-serif;
     display: flex;
@@ -45,7 +45,7 @@
   
   /* (C) CURRENT SHOPPING CART */
   #cart-items {
-    background: #31394d;
+    background:  #ff0000;
     color: #fff;
     border-radius: 5px;
   }

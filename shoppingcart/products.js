@@ -3,27 +3,29 @@ var products = {
     123: {
       name : "Lucy",
       desc : "A very helpful dog you will definitely love it.",
-      img : "dog-two",
+      img : "dog-two.jpg",
       price : 1000
     },
     124: {
-      name : "MokBook Rookie",
-      desc : "Unsatiable its possession nor off.",
-      img : "dummy-pdt-b.jpg",
-      price : 1247
+      name : "Charlie",
+      desc : "A great dog to play with it.",
+      img : "dog-three.jpg",
+      price : 900
     },
     125: {
-      name : "iPong Max",
+      name : "Milo",
       desc : "All difficulty unreserved the solicitude.",
-      img : "dummy-pdt-a.jpg",
-      price : 675
+      img : "cat-three.jpg",
+      price : 500
     },
     126: {
-      name : "iTab Pok",
+      name : "Leo",
       desc : "Had judgment out property the supplied. ",
-      img : "dummy-pdt-a.jpg",
-      price : 842
+      img : "cat-four.jpg",
+      price : 700
     }
   };
+
+  
 
   
