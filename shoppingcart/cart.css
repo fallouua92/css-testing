@@ -66,6 +66,6 @@
   
   /* (D) RESPONSIVE */
   @media screen AND (max-width: 768px) {
-    #cart-wrap { grid-template-columns: 60% 40%; }
-    #cart-products { grid-template-columns: auto; }
+    #cart-wrappets { grid-template-columns: 60% 40%; }
+    #cart-productsoets { grid-template-columns: auto; }
   }
