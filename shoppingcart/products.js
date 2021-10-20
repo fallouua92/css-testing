@@ -4,11 +4,11 @@ var productswebpets = {
       name : "Lucy",
       desc : "A very helpful dog you will definitely love it.",
       category:"Dog",
-      img : "dog1.jpg",
+      img : "dog-two.jpg",
       price : 1000
     },
     124: {
-      name : "Charlie",
+      name : "Lucy",
       desc : "A great dog to play with it.",
       category :"Dog",
       img : "dog-three.jpg",
