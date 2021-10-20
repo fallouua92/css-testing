@@ -1,8 +1,9 @@
 // DUMMY PRODUCTS (PRODUCT ID : DATA)
-var products = {
+var productswebpets = {
     123: {
       name : "Lucy",
       desc : "A very helpful dog you will definitely love it.",
+      category:"Dog",
       img : "dog-two.jpg",
       price : 1000
     },
