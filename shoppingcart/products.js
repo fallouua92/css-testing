@@ -10,18 +10,21 @@ var productswebpets = {
     124: {
       name : "Charlie",
       desc : "A great dog to play with it.",
+      category :"Dog",
       img : "dog-three.jpg",
       price : 900
     },
     125: {
       name : "Milo",
-      desc : "All difficulty unreserved the solicitude.",
+      desc : "A wonderful cat to feel right at home.",
+      category :"cat",
       img : "cat-three.jpg",
       price : 500
     },
     126: {
       name : "Leo",
-      desc : "Had judgment out property the supplied. ",
+      desc : "A great cat to chill with. ",
+      category :"cat",
       img : "cat-four.jpg",
       price : 700
     }
