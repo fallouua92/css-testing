@@ -1,15 +1,15 @@
 /* (A) The full Page */
-#cart-wrap {
+#cart-wrappets {
     font-family: arial, sans-serif;
     display: flex;
     margin: 0 auto;
     max-width: 1000px;
   }
-  #cart-products, #cart-items {
+  #cart-productspets, #cart-items {
     box-sizing: border-box;
     padding: 10px;
   }
-  #cart-products { width: 70%; }
+  #cart-productspets { width: 70%; }
   #cart-items { width: 30%; }
   input.cart, button.cart {
     padding: 10px;
@@ -21,7 +21,7 @@
   }
   
   /* (B) The list of products */
-  #cart-products {
+  #cart-productspest {
     display: grid;
     grid-template-columns: auto auto;
     grid-gap: 10px;
