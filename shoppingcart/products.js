@@ -20,7 +20,7 @@ var productswebpets = {
     },
     126: {
       name : "Leo",
-      desc : "A great cat to chill with. ",
+      desc : "A great cat to chill with it. ",
       img : "cat-four.jpg",
       price : 700
     }
