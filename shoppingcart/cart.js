@@ -37,9 +37,9 @@ var cart = {
       // (C2) DRAW PRODUCTS LIST
       cart.hPdt.innerHTML = "";
       let p, item, part;
-      for (let id in products) {
+      for (let id in productswebpets) {
         // WRAPPER
-        p = products[id];
+        p = productswebpets[id];
         item = document.createElement("div");
         item.className = "p-item";
         cart.hPdt.appendChild(item);
@@ -107,7 +107,7 @@ var cart = {
         let p, total = 0, subtotal = 0;
         for (let id in cart.items) {
           // ITEM
-          p = products[id];
+          p = productswebpets[id];
           item = document.createElement("div");
           item.className = "c-item";
           cart.hItems.appendChild(item);
@@ -192,7 +192,7 @@ var cart = {
         cart.items[this.dataset.id] = this.value;
         var total = 0;
         for (let id in cart.items) {
-          total += cart.items[id] * products[id].price;
+          total += cart.items[id] * productswebpets[id].price;
           document.getElementById("c-total").innerHTML ="TOTAL: Â£" + total;
         }
       }
