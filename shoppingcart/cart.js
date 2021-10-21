@@ -213,7 +213,7 @@ var cart = {
       // RECORD TO DATABASE
       // PAYMENT
       // WHATEVER IS REQUIRED
-      alert("Thanks for shopping with us. you have been successfuly check out!");
+      alert("Thanks for shopping with us, hope to see you soon!");
   
       /*
       var data = new FormData();
