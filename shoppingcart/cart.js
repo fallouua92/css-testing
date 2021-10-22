@@ -1,13 +1,10 @@
 var cart = {
-    hPdt : null, // HTML products list // This varibale is for the product list.
+    hPdt : null, // This varibale is for the product list.
     hItems : null, // This varibale is for the shopping cart items
     items : {}, // This one is the current item in the shopping cart
     iURL : "Images/", // This varibale is for the imges 
-  
-    // (B) LOCALSTORAGE CART
-    // (B1) SAVE CURRENT CART INTO LOCALSTORAGE
-    // This fuction is to save the cart in the local storage
-    // https://www.youtube.com/watch?v=GihQAC1I39Q
+    
+    // This code is the localstorage cart
     save : function () {
       localStorage.setItem("cart", JSON.stringify(cart.items));
     },
