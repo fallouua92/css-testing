@@ -207,12 +207,6 @@ var cart = {
   
     // (H) CHECKOUT
     checkout : function () {
-      // SEND DATA TO SERVER
-      // CHECKS
-      // SEND AN EMAIL
-      // RECORD TO DATABASE
-      // PAYMENT
-      // WHATEVER IS REQUIRED
       alert("Thanks for shopping with us, hope to see you soon!");
   
       /*
