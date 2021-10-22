@@ -13,7 +13,7 @@ var basket = {
     // This is for getting back items from the local storage
     
     load : function () {
-      cart.items = localStorage.getItem("cart");
+      basket.items = localStorage.getItem("cart");
       if (cart.items == null) { cart.items = {}; }
       else { cart.items = JSON.parse(cart.items); }
     },
