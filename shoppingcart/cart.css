@@ -14,7 +14,7 @@
 input.cart, button.cart {
   padding: 10px;
   border: 0;
-  background:  #ff4dff;
+  background:  #80ff00;
   color: #fff;
   font-weight: 700;
   cursor: pointer;
@@ -45,7 +45,7 @@ input.p-add { width: 70%; }
 
 /* (C) CURRENT SHOPPING CART */
 #cart-items {
-  background: #1a8cff;
+  background: #ff0000;
   color: #fff;
   border-radius: 5px;
 }
