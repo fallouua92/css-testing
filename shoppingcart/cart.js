@@ -1,4 +1,4 @@
-var cart = {
+var basket = {
     hPdt : null, // This varibale is for the product list.
     hItems : null, // This varibale is for the shopping cart items
     items : {}, // This one is the current item in the shopping cart
