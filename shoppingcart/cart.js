@@ -6,7 +6,7 @@ var basket = {
     
     // This code is the localstorage cart
     save : function () {
-      localStorage.setItem("cart", JSON.stringify(cart.items));
+      localStorage.setItem("cart", JSON.stringify(basket.items));
     },
   
    
@@ -14,28 +14,28 @@ var basket = {
     
     load : function () {
       basket.items = localStorage.getItem("cart");
-      if (cart.items == null) { cart.items = {}; }
-      else { cart.items = JSON.parse(cart.items); }
+      if (basket.items == null) { basket.items = {}; }
+      else { basket.items = JSON.parse(basket.items); }
     },
   
     // This function to to empty the cart
     empty : function () {
       if (confirm("Empty cart?")) {
-        cart.items = {};
+        basket.items = {};
         localStorage.removeItem("cart");
-        cart.list();
+        basket.list();
       }
     },
   
     init : function () {
      
       // This is a connection betwen the HTML ID and varible of this page
-      cart.hPdt = document.getElementById("cart-products");
-      cart.hItems = document.getElementById("cart-items");
+      basket.hPdt = document.getElementById("cart-products");
+      basket.hItems = document.getElementById("cart-items");
   
       
    // I have created a new varible to save the details from the products page varible.
-      cart.hPdt.innerHTML = "";
+       basket.hPdt.innerHTML = "";
       let p, item, part;
       for (let id in productswebpets) {
      
@@ -43,11 +43,11 @@ var basket = {
         p = productswebpets[id];
         item = document.createElement("div");
         item.className = "p-item";
-        cart.hPdt.appendChild(item);
+        basket.hPdt.appendChild(item);
   
         // This function is to add product images
         part = document.createElement("img");
-        part.src = cart.iURL + p.img;
+        part.src = basket.iURL + p.img;
         part.className = "p-img";
         item.appendChild(part);
   
@@ -79,18 +79,18 @@ var basket = {
         part.type = "button";
         part.value = "Add to Cart";
         part.className = "cart p-add";
-        part.onclick = cart.add;
+        part.onclick = basket.add;
         part.dataset.id = id;
         item.appendChild(part);
       }
   
   
       // This is the loading from the previous
-      cart.load();
+      basket.load();
   
   
       // The actual list of the cart items
-      cart.list();
+      basket.list();
     },
   
    
@@ -98,11 +98,11 @@ var basket = {
     list : function () {
     
       // This one is to take out all the items from the cart
-      cart.hItems.innerHTML = "";
+      basket.hItems.innerHTML = "";
       let item, part, pdt;
       let empty = true;
-      for (let key in cart.items) {
-        if(cart.items.hasOwnProperty(key)) { empty = false; break; }
+      for (let key in basket.items) {
+        if(basket.items.hasOwnProperty(key)) { empty = false; break; }
       }
   
      
@@ -110,19 +110,19 @@ var basket = {
       if (empty) {
         item = document.createElement("div");
         item.innerHTML = "Cart is empty";
-        cart.hItems.appendChild(item);
+        basket.hItems.appendChild(item);
       }
   
       // This one is notify that we have the list itmes inside the cart
       else {
         let p, total = 0, subtotal = 0;
-        for (let id in cart.items) {
+        for (let id in basket.items) {
           // ITEM
           // This code is going to put the ids of selected item and put in the cart sectiion.
           p = productswebpets[id];
           item = document.createElement("div");
           item.className = "c-item";
-          cart.hItems.appendChild(item);
+          basket.hItems.appendChild(item);
   
           // NAME
           // This code is going to put the name of the items in the cart sections.
@@ -138,21 +138,21 @@ var basket = {
           part.value = "X";
           part.dataset.id = id;
           part.className = "c-del cart";
-          part.addEventListener("click", cart.remove);
+          part.addEventListener("click", basket.remove);
           item.appendChild(part);
   
           // This showing how many items in the cart.
           part = document.createElement("input");
           part.type = "number";
           part.min = 0;
-          part.value = cart.items[id];
+          part.value = basket.items[id];
           part.dataset.id = id;
           part.className = "c-qty";
-          part.addEventListener("change", cart.change);
+          part.addEventListener("change", basket.change);
           item.appendChild(part);
   
           // This code is going to add the price of each item to the total
-          subtotal = cart.items[id] * p.price;
+          subtotal = basket.items[id] * p.price;
           total += subtotal;
         }
   
@@ -161,52 +161,52 @@ var basket = {
         item.className = "c-total";
         item.id = "c-total";
         item.innerHTML ="TOTAL: £" + total;
-        cart.hItems.appendChild(item);
+        basket.hItems.appendChild(item);
   
         // The empty button is going to ask a question when the customer click on the empty button
         item = document.createElement("input");
         item.type = "button";
         item.value = "Empty";
-        item.addEventListener("click", cart.empty);
+        item.addEventListener("click", basket.empty);
         item.className = "c-empty cart";
-        cart.hItems.appendChild(item);
+        basket.hItems.appendChild(item);
   
         // The checkout button where the customers can click.
         item = document.createElement("input");
         item.type = "button";
         item.value = "Checkout";
-        item.addEventListener("click", cart.checkout);
+        item.addEventListener("click", basket.checkout);
         item.className = "c-checkout cart";
-        cart.hItems.appendChild(item);
+        basket.hItems.appendChild(item);
       }
     },
   
     // This function is going to add items into the cart
     add : function () {
-      if (cart.items[this.dataset.id] == undefined) {
-        cart.items[this.dataset.id] = 1;
+      if (basket.items[this.dataset.id] == undefined) {
+        basket.items[this.dataset.id] = 1;
       } else {
-        cart.items[this.dataset.id]++;
+        basket.items[this.dataset.id]++;
       }
-      cart.save();
-      cart.list();
+      basket.save();
+      basket.list();
     },
 
     // This function is for changing the quantity
     change : function () {
     // this part is going to remove itmes
       if (this.value <= 0) {
-        delete cart.items[this.dataset.id];
-        cart.save();
-        cart.list();
+        delete basket.items[this.dataset.id];
+        basket.save();
+        basket.list();
       }
 
       // This one is just to update the total
       else {
-        cart.items[this.dataset.id] = this.value;
+        basket.items[this.dataset.id] = this.value;
         var total = 0;
-        for (let id in cart.items) {
-          total += cart.items[id] * productswebpets[id].price;
+        for (let id in basket.items) {
+          total += basket.items[id] * productswebpets[id].price;
           document.getElementById("c-total").innerHTML ="TOTAL: Â£" + total;
         }
       }
@@ -215,9 +215,9 @@ var basket = {
     // (G) REMOVE ITEMS FROM CART
     // This function is for removing items from the cart
     remove : function () {
-      delete cart.items[this.dataset.id];
-      cart.save();
-      cart.list();
+      delete basket.items[this.dataset.id];
+      basket.save();
+      basket.list();
     },
   
     // (H) CHECKOUT
@@ -236,4 +236,4 @@ var basket = {
       */
     }
   };
-  window.addEventListener("DOMContentLoaded", cart.init);
+  window.addEventListener("DOMContentLoaded", basket.init);
